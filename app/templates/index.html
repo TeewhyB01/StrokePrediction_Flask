@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <center>
+            <img src="static/illustration of a Stroke_04.png" height="250" />
+            <h3>Stroke Prediction using ML Algorithms</h3>
+            <label text="{{ minput }}" id="test" >{{ minput }}</label>
+            <form method="POST">
+                <label>Input Age:</label>
+                <input name="age" placeholder="Age" type="number" required><br><br>
+                <label>Do you have Hypertension?</label>:</label>
+                Yes<input name="age" value="1" type="radio" required><br><br>
+                No<input name="age" Text="No" value="0" type="radio" required><br><br>
+                <br><br>
+                <label>Do you have Heart Disease?</label>:</label>
+                Yes<input name="heart" Text="Yes" value="1" type="radio" required><br><br>
+                No<input name="heart" Text="No" value="0" type="radio" required>
+                <br>
+                Enter BMI value <input type="range" name="bmi" min="1.0" max="50.0" value="26.0" class="slider">
+                <!-- <label>Input Age:</label>
+                <input name="age" placeholder="Age" type="text"><br> -->
+                <input type="submit" Text="Submit" style="width:100;background-color:black;color:white">
+            </form>
+        </center>
+    </body>
+    <script>
+        setInterval(()=>{
+            let el = document.getElementById('test')
+            console.log(el)
+        }, 2000 )
+        .slider.oninput = function() {
+        if(this.value%5 == 0){
+            output.innerHTML = this.value;
+        }
+
+        }
+    </script>
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</html>
+
+
+
+
+
